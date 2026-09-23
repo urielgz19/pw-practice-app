@@ -5,7 +5,7 @@ import {DatepickerPage} from './datePickerPage'
 import {DialogPage} from './dialogPage'
 
 export class PageManager{
-    /*Acts as a central manager for page objects.
+    /*Class that acts as a central manager for page objects.
       Its job is usually to create and expose objects such as login page, 
       home page, checkout page, etc.
       Helps keep test code cleaner by avoiding repeated new SomePage(page) calls.
@@ -17,7 +17,7 @@ export class PageManager{
     private readonly datePickerPage: DatepickerPage
     private readonly dialogPage: DialogPage
 
-    //Add instances of the test page class- Each Class represents a page in the acrooss the Application
+    //Add instances of the test page class- Each Class represents a page in acrooss the testing Application
     constructor (page: Page){
         this.page = page
         this.navigationPage = new NavigationPage(this.page)

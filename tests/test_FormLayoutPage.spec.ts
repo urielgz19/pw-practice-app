@@ -23,7 +23,7 @@ test('Test Case #2- Form Layouts page-Fill Using the Grid Form', async ({page}) 
           'Password2','Option 2')
     
 }) 
-/*Test Casse #3 Form layputes page-Fill Using the Basic Form */
+/*Test Case #3 Form layouts page-Fill Using the Basic Form */
 test('Test Case #3- Form Layouts page-Fill Using the Basic Form', async ({page}) => {
     const launchpageManager = new PageManager(page)
     await launchpageManager.navigateTo().formLayoutPage() 
