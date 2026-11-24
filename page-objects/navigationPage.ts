@@ -170,8 +170,8 @@ export class NavigationPage extends HelperBase{
 
     }
 
-    //Helper Method to validate Main Menu state i.e. whether is collapsed or expanded and to navigate
-    //to sub-menu option i.e. Forms, Modal & Overlays, Extra Components, etc
+    //Helper Method to validate Main Menu state i.e. whether it's collapsed or 
+    //expanded and enabled to navigate to sub-menu option i.e. Forms, Modal & Overlays, Extra Components, etc
     private async selectGroupMenuItem(groupItemTitle: string){
         const groupMenuItem = this.page.getByTitle(groupItemTitle,{exact: true})
         const expandedState = await groupMenuItem.getAttribute('aria-expanded') 

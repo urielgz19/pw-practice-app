@@ -17,7 +17,7 @@ export class PageManager{
     private readonly datePickerPage: DatepickerPage
     private readonly dialogPage: DialogPage
 
-    //Add instances of the test page class- Each Class represents a page in acrooss the testing Application
+    //Add instances of the test page class- Each Class represents a page across the testing Application
     constructor (page: Page){
         this.page = page
         this.navigationPage = new NavigationPage(this.page)
